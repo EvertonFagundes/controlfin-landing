@@ -1,0 +1,7 @@
+# Estado local do Netlify CLI — não faz parte do site
+.netlify/
+
+# APK fica no GitHub Releases, nunca no repositório:
+# cada versão teria 91 MB permanentes no histórico do git.
+# URL estável: https://github.com/EvertonFagundes/controlfin-landing/releases/latest/download/ControlFin.apk
+*.apk
