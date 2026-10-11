@@ -130,6 +130,73 @@
     </video>
   </section>
 
+  <!-- Seção de planos ANTES do download, e não depois: quem chega até aqui
+       precisa saber o que é grátis e quanto custa o pago antes de decidir se
+       baixa. Preço vem do backend (GET /planos) — ver o script no fim. -->
+  <section class="planos" id="planos">
+    <h2>Anote de graça. Analise se quiser.</h2>
+    <p class="planos-lead">
+      Anotar, ver e editar suas transações é grátis para sempre — sem cartão e
+      sem contagem regressiva. O Premium é pra quem quer <strong>entender</strong>
+      o dinheiro, não só registrar ele.
+    </p>
+
+    <div class="planos-colunas">
+      <div class="coluna">
+        <h3 class="coluna-titulo">Grátis, para sempre</h3>
+        <ul class="checks">
+          <li>Lançar, editar e excluir suas transações</li>
+          <li>Ver o saldo e todo o histórico</li>
+          <li>Recorrência: contas fixas entram sozinhas no mês</li>
+          <li>Lembrete diário pra anotar o gasto do dia</li>
+          <li id="gratis-categorias">Até 5 categorias</li>
+          <li>Casa compartilhada — todo mundo na mesma página</li>
+        </ul>
+      </div>
+
+      <div class="coluna coluna-premium">
+        <h3 class="coluna-titulo">No Premium</h3>
+        <!-- Preenchido por JS a partir de GET /planos. -->
+        <ul class="checks" id="lista-premium">
+          <li>Relatórios completos por categoria e período</li>
+          <li>Simulador "Posso comprar?"</li>
+          <li>Categorias sem limite</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="planos-grade">
+      <article class="plano">
+        <h3 id="nome-mensal">Mensal</h3>
+        <p class="preco">
+          <span class="valor" id="preco-mensal">R$&nbsp;9,90</span>
+          <span class="periodo">/mês</span>
+        </p>
+        <p class="plano-desc" id="desc-mensal">Renova todo mês. Cancele quando quiser.</p>
+        <p class="meios" id="meios-mensal">Pago no cartão</p>
+        <a class="btn btn-outline" href="#download">Baixar o app</a>
+      </article>
+
+      <article class="plano plano-destaque">
+        <span class="selo">Vale mais a pena</span>
+        <h3 id="nome-anual">Anual</h3>
+        <p class="preco">
+          <span class="valor" id="preco-anual">R$&nbsp;99,90</span>
+          <span class="periodo">/ano</span>
+        </p>
+        <p class="plano-desc" id="desc-anual">Válido por 12 meses, sem renovação automática.</p>
+        <p class="meios" id="meios-anual">Paga no Pix ou no cartão</p>
+        <p class="economia" id="economia"></p>
+        <a class="btn btn-primary" href="#download">Baixar o app</a>
+      </article>
+    </div>
+
+    <p class="planos-nota">
+      Você assina dentro do próprio app, pelo Mercado Pago. Cancele quando quiser —
+      o acesso continua até o fim do que você já pagou.
+    </p>
+  </section>
+
   <section class="download" id="download">
     <h2>Comece a controlar melhor seu dinheiro.</h2>
     <p class="version">ControlFin v1.0.6</p>

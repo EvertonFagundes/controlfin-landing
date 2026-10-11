@@ -415,6 +415,110 @@ a:hover { opacity: .85; }
 
 .topbar .btn-outline:hover { border-color: var(--green); color: var(--green); }
 
+/* ---- Planos ---- */
+.planos { text-align: center; }
+.planos-lead { margin: 0 auto 44px; }
+.planos-lead strong { color: var(--text); }
+
+.planos-colunas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 880px;
+  margin: 0 auto 48px;
+  text-align: left;
+}
+
+.coluna {
+  background: var(--card);
+  border: 1px solid #1c2624;
+  border-radius: 16px;
+  padding: 26px 28px;
+}
+
+.coluna-premium { border-color: rgba(3,166,136,.45); }
+
+.coluna-titulo {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+.coluna-premium .coluna-titulo { color: var(--green); }
+
+.checks { list-style: none; }
+.checks li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 11px;
+  font-size: 15.5px;
+  color: var(--muted);
+}
+.checks li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--green);
+  font-weight: 700;
+}
+
+.planos-grade {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.plano {
+  position: relative;
+  background: var(--card);
+  border: 1px solid #1c2624;
+  border-radius: 18px;
+  padding: 32px 26px;
+  text-align: center;
+}
+
+.plano-destaque {
+  border: 2px solid var(--green);
+  box-shadow: 0 14px 40px rgba(3,166,136,.18);
+}
+
+.plano h3 { font-size: 17px; margin-bottom: 10px; }
+
+.selo {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--green);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.preco { margin: 0 0 6px; color: var(--text); line-height: 1.2; }
+.preco .valor { font-size: 36px; font-weight: 800; }
+.preco .periodo { font-size: 15px; color: var(--muted); font-weight: 600; }
+
+.plano-desc { font-size: 14.5px; margin-bottom: 6px; }
+.meios { font-size: 13px; color: var(--green); margin-bottom: 22px; }
+
+.economia {
+  font-size: 13.5px;
+  color: var(--green);
+  font-weight: 700;
+  margin: -14px 0 18px;
+}
+
+.plano .btn { width: 100%; }
+
+.planos-nota { font-size: 14px; margin-top: 30px; }
+
 /* Responsivo */
 @media (max-width: 900px) {
   .topbar { padding: 14px 5vw; }
@@ -423,6 +527,7 @@ a:hover { opacity: .85; }
   section { padding: 50px 5vw; scroll-margin-top: 55px; }
   .problem .example, .buy-flow { width: 100%; overflow-x: auto; }
   .problem pre { white-space: pre; }
+  .planos-colunas, .planos-grade { grid-template-columns: 1fr; max-width: 460px; }
 }
 
 @media (max-width: 600px) {
