@@ -149,6 +149,10 @@
           <li>Ver o saldo e todo o histórico</li>
           <li>Recorrência: contas fixas entram sozinhas no mês</li>
           <li>Lembrete diário pra anotar o gasto do dia</li>
+          <!-- Entrou no grátis em 11/10: o veredicto é aritmética, é a melhor
+               vitrine do app, e o que é pago é o PORQUÊ — a análise com IA.
+               Graça atrai, atrativo converte. -->
+          <li>Simulador "Posso comprar?" — vê quanto sobra antes de decidir</li>
           <li id="gratis-categorias">Até 5 categorias</li>
           <li>Casa compartilhada — todo mundo na mesma página</li>
         </ul>
@@ -156,10 +160,11 @@
 
       <div class="coluna coluna-premium">
         <h3 class="coluna-titulo">No Premium</h3>
-        <!-- Preenchido por JS a partir de GET /planos. -->
+        <!-- Preenchido por JS a partir de GET /planos; isto é só o fallback
+             enquanto o script não roda (ou se o Render estiver dormindo). -->
         <ul class="checks" id="lista-premium">
           <li>Relatórios completos por categoria e período</li>
-          <li>Simulador "Posso comprar?"</li>
+          <li>Análise com IA: ela explica o porquê do veredito</li>
           <li>Categorias sem limite</li>
         </ul>
       </div>
@@ -199,7 +204,7 @@
 
   <section class="download" id="download">
     <h2>Comece a controlar melhor seu dinheiro.</h2>
-    <p class="version">ControlFin v1.0.6</p>
+    <p class="version">ControlFin v1.0.7</p>
     <a class="btn btn-primary" href="https://github.com/EvertonFagundes/controlfin-landing/releases/latest/download/ControlFin.apk">📱 Baixar para Android</a>
     <p class="soon">Google Play | iOS — em breve</p>
     <p class="note">Este app é distribuído por APK independente (não está na Play Store). Disponível também por: <a href="https://github.com/EvertonFagundes/controlfin-landing/releases">GitHub Releases</a>.</p>
