@@ -13,7 +13,7 @@
       <img src="logo.png" alt="ControlFin" class="brand-logo" />
       <span>ControlFin</span>
     </div>
-    <a class="btn btn-outline" href="#download">Baixar</a>
+    <a class="btn btn-outline" href="#download">Abrir o app</a>
   </header>
 
   <section class="hero">
@@ -21,7 +21,7 @@
       <img src="logo.png" alt="ControlFin" class="hero-logo" />
       <h1>Seu dinheiro.<br/>Sua decisão.</h1>
       <p>O ControlFin ajuda você a entender quanto entrou, quanto saiu e, principalmente, <strong>quanto você realmente pode gastar.</strong></p>
-      <a class="btn btn-primary" href="#download">Baixar o ControlFin</a>
+      <a class="btn btn-primary" href="#download">Abrir o ControlFin</a>
     </div>
     <div class="phone">
       <div class="phone-screen">
@@ -179,7 +179,7 @@
         </p>
         <p class="plano-desc" id="desc-mensal">Renova todo mês. Cancele quando quiser.</p>
         <p class="meios" id="meios-mensal">Pago no cartão</p>
-        <a class="btn btn-outline" href="#download">Baixar o app</a>
+        <a class="btn btn-outline" href="#download">Abrir o app</a>
       </article>
 
       <article class="plano plano-destaque">
@@ -192,7 +192,7 @@
         <p class="plano-desc" id="desc-anual">Válido por 12 meses, sem renovação automática.</p>
         <p class="meios" id="meios-anual">Paga no Pix ou no cartão</p>
         <p class="economia" id="economia"></p>
-        <a class="btn btn-primary" href="#download">Baixar o app</a>
+        <a class="btn btn-primary" href="#download">Abrir o app</a>
       </article>
     </div>
 
@@ -204,23 +204,19 @@
 
   <section class="download" id="download">
     <h2>Comece a controlar melhor seu dinheiro.</h2>
-    <p class="version">ControlFin v1.0.7</p>
-    <a class="btn btn-primary" href="https://github.com/EvertonFagundes/controlfin-landing/releases/latest/download/ControlFin.apk">📱 Baixar para Android</a>
-    <p class="soon">Google Play | iOS — em breve</p>
-    <p class="note">Este app é distribuído por APK independente (não está na Play Store). Disponível também por: <a href="https://github.com/EvertonFagundes/controlfin-landing/releases">GitHub Releases</a>.</p>
-    <p class="note" style="margin-top: 14px">⚠️ <strong>Por que o Android mostra "Esse app pode causar danos"?</strong><br>
-    Como o app ainda está fora da Play Store, o Google Play Protect exibe esse aviso automaticamente em todos os downloads diretos. Ele não significa um problema de segurança. Para continuar:<br>
-    <strong>1.</strong> Toque em <em>Mais detalhes / Informações adicionais</em><br>
-    <strong>2.</strong> Em seguida toque em <em>Instalar mesmo assim / Recomendado</em>
-    Ele é seguro — estamos com nossos dados no lugar!
-    </p>
+    <p class="version">ControlFin — sempre na versão mais recente</p>
+    <a class="btn btn-primary" href="https://evertonfagundes.github.io/controlfin-app/" target="_blank" rel="noopener">📱 Abrir o ControlFin</a>
+    <p class="soon">Funciona no celular, no computador e em qualquer navegador</p>
+    <p class="note">É um app web: abre no navegador e, se você quiser, <strong>vira um aplicativo com ícone próprio</strong> — sem baixar arquivo, sem passar pela Play Store e sem aviso de "app pode causar danos".</p>
     <div class="tutorial">
-      <h3>🎓 Veja o passo a passo em vídeo</h3>
-      <p class="tutorial-lead">Do site até o app abrindo — com a explicação de cada aviso do Android no caminho (e por que ele aparece).</p>
-      <video class="tutorial-video" controls playsinline preload="metadata" poster="tutorial-poster.jpg">
-        <source src="ControlFin-tutorial-android.mp4" type="video/mp4" />
-        Seu navegador não suporta vídeo.
-      </video>
+      <h3>🎓 Instale como app em 3 passos</h3>
+      <p class="tutorial-lead">No Android e no computador, o navegador oferece pra instalar o ControlFin:</p>
+      <ol class="tutorial-passos">
+        <li><strong>1.</strong> Abra o ControlFin no navegador</li>
+        <li><strong>2.</strong> Toque nos <strong>três pontinhos</strong> do navegador</li>
+        <li><strong>3.</strong> Escolha <strong>Instalar app</strong> (ou "Adicionar à tela inicial")</li>
+      </ol>
+      <p class="tutorial-lead">Ele ganha ícone próprio e abre em janela separada, sem barra do navegador. Se a opção não aparecer, fique uns 30 segundos na página e toque em algum lugar antes — o navegador só oferece depois que você interage.</p>
     </div>
     <p class="social">
       <a class="social-link" href="https://www.instagram.com/controlfin.app/" target="_blank" rel="noopener">
@@ -231,12 +227,12 @@
   </section>
 
   <section class="qr-download">
-    <h2>Escaneie e baixe</h2>
-    <p class="qr-lead">Aponte a câmera do celular pro QR code pra baixar o APK direto:</p>
+    <h2>Escaneie e abra</h2>
+    <p class="qr-lead">Aponte a câmera do celular pro QR code pra abrir o ControlFin direto:</p>
     <div class="qr-wrap">
       <div id="qrcode"></div>
     </div>
-    <p class="qr-note">Ou <a href="https://github.com/EvertonFagundes/controlfin-landing/releases/latest/download/ControlFin.apk">toque aqui pra baixar direto</a>.</p>
+    <p class="qr-note">Ou <a href="https://evertonfagundes.github.io/controlfin-app/">toque aqui pra abrir</a>.</p>
   </section>
 
   <footer>
@@ -246,7 +242,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script>
     new QRCode(document.getElementById("qrcode"), {
-      text: "https://github.com/EvertonFagundes/controlfin-landing/releases/latest/download/ControlFin.apk",
+      text: "https://evertonfagundes.github.io/controlfin-app/",
       width: 180,
       height: 180,
       colorDark : "#0b0f0e",
