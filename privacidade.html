@@ -4,37 +4,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Política de Privacidade – ControlFin</title>
-  <style>
-    body { max-width: 720px; margin: 40px auto; padding: 0 20px; font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
-    h1 { color: #03A688; }
-    h2 { margin-top: 24px; }
-  </style>
+  <meta name="description" content="Como o ControlFin coleta, usa, armazena e protege seus dados, e como você pode exercer seus direitos.">
+  <link rel="stylesheet" href="legal.css">
 </head>
 <body>
-  <h1>Política de Privacidade</h1>
-  <p>Esta política se aplica ao aplicativo <strong>ControlFin</strong>.</p>
+  <header class="topo">
+    <a class="marca" href="index.html"><img src="logo.png" alt=""> ControlFin</a>
+    <nav aria-label="Páginas legais">
+      <a href="index.html">Início</a>
+      <a href="termos.html">Termos</a>
+      <a href="privacidade.html" aria-current="page">Privacidade</a>
+      <a href="suporte.html">Suporte</a>
+    </nav>
+  </header>
 
-  <h2>1. Dados coletados</h2>
-  <p>Quando você cria uma conta ou entra pelo Google, coletamos: nome, endereço de e-mail e foto de perfil (opcional). Também coletamos as transações financeiras que você cadastra (receitas, despesas e categorias) para exibi-las no app.</p>
+  <main>
+    <h1>Política de Privacidade</h1>
+    <p>Esta política se aplica ao aplicativo <strong>ControlFin</strong> e explica quais dados são coletados, por que, como são protegidos e como você pode exercer seus direitos.</p>
 
-  <h2>2. Como usamos seus dados</h2>
-  <p>Usamos esses dados exclusivamente para:<br>
-  • autenticar sua conta;<br>
-  • exibir seus relatórios financeiros no app;<br>
-  • enviar o código de recuperação de senha para o seu e-mail, quando solicitado.</p>
+    <h2>1. Quem é o responsável</h2>
+    <p>O ControlFin é um projeto independente desenvolvido por <strong>Everton Fagundes</strong>. Para fins da Lei Geral de Proteção de Dados (LGPD), o responsável pelo tratamento é o desenvolvedor, que pode ser contatado em <a href="mailto:controlfin.contato@gmail.com">controlfin.contato@gmail.com</a>.</p>
 
-  <h2>3. Compartilhamento de dados</h2>
-  <p>Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros, exceto quando for necessário para o funcionamento do serviço (autenticação pelo Google e envio de e-mails transacionais).</p>
+    <h2>2. Dados coletados</h2>
+    <ul>
+      <li><strong>Conta:</strong> nome, e-mail, foto de perfil (opcional) e senha armazenada em hash. Se você usar login com Google, recebemos nome, e-mail e foto do perfil.</li>
+      <li><strong>Dados financeiros que você cadastra:</strong> receitas, despesas, categorias, recorrências, datas, valores e observações. Eles são necessários para o app funcionar.</li>
+      <li><strong>Casa compartilhada:</strong> nome da casa, código de convite e vínculo com os membros que você convidar.</li>
+      <li><strong>Pagamento:</strong> plano, modalidade, status e datas da assinatura. O pagamento é processado pelo Mercado Pago; o ControlFin não recebe nem armazena os dados do seu cartão.</li>
+      <li><strong>Dados técnicos:</strong> data e hora de acesso, endereço IP, navegador/dispositivo e registros de erro, usados para segurança, limite de tentativas e funcionamento do serviço.</li>
+      <li><strong>Analytics:</strong> eventos agregados de uso (por exemplo, visita, cadastro e primeira transação), sem identificar você.</li>
+      <li><strong>Comunicação:</strong> mensagens que você envia ao suporte, para responder e resolver o seu caso.</li>
+    </ul>
 
-  <h2>4. Armazenamento e segurança</h2>
-  <p>Seus dados são armazenados em banco de dados gerenciado e acessíveis apenas por meio de conexão autenticada com token JWT.</p>
+    <h2>3. Como usamos seus dados</h2>
+    <p>Usamos esses dados para:</p>
+    <ul>
+      <li>autenticar sua conta e manter sua sessão;</li>
+      <li>exibir suas transações, relatórios e simulações no app;</li>
+      <li>enviar o código de recuperação de senha e os lembretes que você ativou;</li>
+      <li>processar o pagamento e liberar o acesso Premium;</li>
+      <li>responder ao seu contato e resolver problemas;</li>
+      <li>proteger o serviço contra abuso, fraude e acessos indevidos;</li>
+      <li>entender, de forma agregada, como o app é usado, para melhorar a experiência.</li>
+    </ul>
 
-  <h2>5. Seus direitos</h2>
-  <p>Você pode editar seu perfil, alterar sua senha ou excluir sua conta a qualquer momento pela tela de Perfil do aplicativo. Ao excluir a conta, todos os seus dados pessoais e transações são apagados permanentemente.</p>
+    <h2>4. Base legal</h2>
+    <p>O tratamento se apoia em: execução do contrato (para prestar o serviço), cumprimento de obrigação legal, legítimo interesse (segurança e melhoria do serviço) e consentimento, quando necessário. Você pode revogar o consentimento a qualquer momento, sem afetar o uso anterior.</p>
 
-  <h2>6. Contato</h2>
-  <p>Em caso de dúvidas, entre em contato com o desenvolvedor: <strong>evertonfagundes@gmail.com</strong> (troca pelo seu e-mail).</p>
+    <h2>5. Compartilhamento</h2>
+    <p>Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros para publicidade. Compartilhamos apenas o necessário com provedores que ajudam o app a funcionar:</p>
+    <ul>
+      <li><strong>Mercado Pago</strong> — processamento de pagamentos;</li>
+      <li><strong>Brevo</strong> — envio de e-mails transacionais, como o código de recuperação;</li>
+      <li><strong>Render</strong> — hospedagem da API e do banco de dados;</li>
+      <li><strong>Cloudflare</strong> — hospedagem e analytics agregado, quando ativado;</li>
+      <li><strong>Google</strong> — apenas se você escolher entrar com uma conta Google.</li>
+    </ul>
+    <p>Esses provedores podem processar dados fora do Brasil. Quando isso acontece, buscamos manter salvaguardas contratuais e técnicas compatíveis com a LGPD.</p>
 
-  <p><em>Atualizado em 07/10/2026.</em></p>
+    <h2>6. Cookies e analytics</h2>
+    <p>O site não usa cookies de publicidade. Usamos analytics agregado e sem cookies para contar visitas e eventos (por exemplo, cadastro e primeira transação); esses dados não identificam você. Se um dia forem usados anúncios ou cookies de publicidade, esta política será atualizada antes.</p>
+
+    <h2>7. Armazenamento e segurança</h2>
+    <p>Seus dados ficam em banco de dados gerenciado, acessível por conexão autenticada. Usamos HTTPS, tokens JWT, hash de senha com bcrypt e controle de acesso no servidor. Nenhum sistema é 100% seguro, mas trabalhamos para reduzir riscos e corrigir falhas com prioridade.</p>
+
+    <h2>8. Retenção</h2>
+    <p>Mantemos seus dados enquanto sua conta existir. Quando você exclui a conta, os dados pessoais e as transações são apagados; cópias de backup podem permanecer por um prazo limitado, até serem substituídas, e podem ser mantidas quando houver obrigação legal. Mensagens de suporte são guardadas pelo tempo necessário para resolver o caso.</p>
+
+    <h2>9. Seus direitos</h2>
+    <p>Nos termos da LGPD, você pode solicitar:</p>
+    <ul>
+      <li>confirmação de que tratamos seus dados e acesso a eles;</li>
+      <li>correção de dados incompletos ou desatualizados;</li>
+      <li>exclusão dos dados, feita no app em <strong>Perfil &gt; Excluir conta</strong>;</li>
+      <li>informações sobre compartilhamento;</li>
+      <li>portabilidade, quando aplicável;</li>
+      <li>revogação do consentimento.</li>
+    </ul>
+    <p>Para exercer um direito, mande e-mail para <a href="mailto:controlfin.contato@gmail.com">controlfin.contato@gmail.com</a>. Respondemos em até 15 dias, prorrogáveis quando a lei permitir.</p>
+
+    <h2>10. Menores de idade</h2>
+    <p>O ControlFin não é destinado a menores de 18 anos. Se identificarmos uma conta nessa situação, ela poderá ser encerrada e os dados apagados.</p>
+
+    <h2>11. Mudanças nesta política</h2>
+    <p>Podemos atualizar esta política para refletir mudanças no app, nos provedores ou na lei. A versão nova vale a partir da publicação nesta página; mudanças relevantes serão avisadas no app ou por e-mail.</p>
+
+    <h2>12. Contato</h2>
+    <p>Dúvidas sobre privacidade: <a href="mailto:controlfin.contato@gmail.com">controlfin.contato@gmail.com</a>. Para ajuda com o app, veja a <a href="suporte.html">página de suporte</a>.</p>
+
+    <p><em>Atualizado em 21/10/2026.</em></p>
+  </main>
+
+  <footer class="rodape">
+    <p>© 2026 ControlFin — Seu dinheiro. Sua decisão.</p>
+    <p><a href="termos.html">Termos</a> · <a href="privacidade.html">Privacidade</a> · <a href="suporte.html">Suporte</a></p>
+  </footer>
 </body>
 </html>
