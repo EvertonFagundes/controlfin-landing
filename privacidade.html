@@ -29,6 +29,7 @@
     <ul>
       <li><strong>Conta:</strong> nome, e-mail, foto de perfil (opcional) e senha armazenada em hash. Se você usar login com Google, recebemos nome, e-mail e foto do perfil.</li>
       <li><strong>Dados financeiros que você cadastra:</strong> receitas, despesas, categorias, recorrências, datas, valores e observações. Eles são necessários para o app funcionar.</li>
+      <li><strong>Foto de cupom fiscal (opcional):</strong> quando você usa a leitura de NFC-e por foto, a imagem é enviada à API apenas para extrair os dados do cupom. Ela é processada em memória pelo servidor e não é armazenada; o texto lido também não fica guardado. Só os campos que você confirmar entram na transação.</li>
       <li><strong>Casa compartilhada:</strong> nome da casa, código de convite e vínculo com os membros que você convidar.</li>
       <li><strong>Pagamento:</strong> plano, modalidade, status e datas da assinatura. O pagamento é processado pelo Mercado Pago; o ControlFin não recebe nem armazena os dados do seu cartão.</li>
       <li><strong>Dados técnicos:</strong> data e hora de acesso, endereço IP, navegador/dispositivo e registros de erro, usados para segurança, limite de tentativas e funcionamento do serviço.</li>
@@ -43,6 +44,7 @@
       <li>exibir suas transações, relatórios e simulações no app;</li>
       <li>enviar o código de recuperação de senha e os lembretes que você ativou;</li>
       <li>processar o pagamento e liberar o acesso Premium;</li>
+      <li>ler a foto do cupom fiscal para preencher a transação, quando você escolhe usar esse recurso;</li>
       <li>responder ao seu contato e resolver problemas;</li>
       <li>proteger o serviço contra abuso, fraude e acessos indevidos;</li>
       <li>entender, de forma agregada, como o app é usado, para melhorar a experiência.</li>
@@ -56,7 +58,7 @@
     <ul>
       <li><strong>Mercado Pago</strong> — processamento de pagamentos;</li>
       <li><strong>Brevo</strong> — envio de e-mails transacionais, como o código de recuperação;</li>
-      <li><strong>Render</strong> — hospedagem da API e do banco de dados;</li>
+      <li><strong>Render</strong> — hospedagem da API e do banco de dados; a foto do cupom é processada em memória para OCR e descartada;</li>
       <li><strong>Cloudflare</strong> — hospedagem e analytics agregado, quando ativado;</li>
       <li><strong>Google</strong> — apenas se você escolher entrar com uma conta Google.</li>
     </ul>
