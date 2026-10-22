@@ -4,24 +4,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ControlFin — Seu dinheiro. Sua decisão.</title>
-  <meta name="description" content="O ControlFin ajuda você a entender quanto entrou, quanto saiu e quanto você pode gastar." />
+  <meta name="description" content="O ControlFin ajuda você a entender quanto entrou, quanto saiu e quanto você pode gastar. App web, sem instalar." />
+  <meta name="theme-color" content="#0b0f0e" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://evertonfagundes.github.io/controlfin-landing/" />
+  <link rel="icon" href="logo.png" />
   <link rel="stylesheet" href="style.css" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="ControlFin" />
+  <meta property="og:title" content="ControlFin — Seu dinheiro. Sua decisão." />
+  <meta property="og:description" content="Entenda quanto entrou, quanto saiu e quanto você realmente pode gastar. App web, sem instalar." />
+  <meta property="og:url" content="https://evertonfagundes.github.io/controlfin-landing/" />
+  <meta property="og:image" content="https://evertonfagundes.github.io/controlfin-landing/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ControlFin — Seu dinheiro. Sua decisão." />
+  <meta name="twitter:description" content="Entenda quanto entrou, quanto saiu e quanto você realmente pode gastar. App web, sem instalar." />
+  <meta name="twitter:image" content="https://evertonfagundes.github.io/controlfin-landing/logo.png" />
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="faixa-demo">Demonstração ao vivo: abra no navegador, sem instalar.</div>
   <header class="topbar">
     <div class="brand">
       <img src="logo.png" alt="ControlFin" class="brand-logo" />
       <span>ControlFin</span>
     </div>
-    <a class="btn btn-outline" href="https://evertonfagundes.github.io/controlfin-app/" target="_blank" rel="noopener">Abrir o app</a>
+    <a class="btn btn-outline" href="https://evertonfagundes.github.io/controlfin-app/" target="_blank" rel="noopener">Testar agora</a>
   </header>
 
+  <main id="conteudo">
   <section class="hero">
     <div class="hero-text">
       <img src="logo.png" alt="ControlFin" class="hero-logo" />
+      <p class="hero-eyebrow">APP WEB · SEM INSTALAR · GRÁTIS PARA COMEÇAR</p>
       <h1>Seu dinheiro.<br/>Sua decisão.</h1>
       <p>O ControlFin ajuda você a entender quanto entrou, quanto saiu e, principalmente, <strong>quanto você realmente pode gastar.</strong></p>
       <a class="btn btn-primary" href="https://evertonfagundes.github.io/controlfin-app/" target="_blank" rel="noopener">Abrir o ControlFin</a>
+      <div class="hero-trust">
+        <span>✓ Sem cartão</span>
+        <span>✓ Funciona no navegador</span>
+        <span>✓ Comece em menos de 1 minuto</span>
+      </div>
     </div>
     <div class="phone">
       <div class="phone-screen">
@@ -108,15 +133,15 @@
     <p style="margin: 0 auto 10px;">As telas do ControlFin, direto do seu celular:</p>
     <div class="shots">
       <figure class="shot-item">
-        <img src="screenshots/dashboard.jpeg" alt="Dashboard do ControlFin" />
+        <img src="screenshots/dashboard.jpeg" alt="Dashboard do ControlFin" loading="lazy" decoding="async" />
         <figcaption>Dashboard</figcaption>
       </figure>
       <figure class="shot-item">
-        <img src="screenshots/nova-transacao.jpeg" alt="Nova transação" />
+        <img src="screenshots/nova-transacao.jpeg" alt="Nova transação" loading="lazy" decoding="async" />
         <figcaption>Nova transação</figcaption>
       </figure>
       <figure class="shot-item">
-        <img src="screenshots/perfil.jpeg" alt="Meu Perfil" />
+        <img src="screenshots/perfil.jpeg" alt="Meu Perfil" loading="lazy" decoding="async" />
         <figcaption>Meu Perfil</figcaption>
       </figure>
     </div>
@@ -124,7 +149,7 @@
 
   <section class="video">
     <h2>Veja na prática</h2>
-    <video controls preload="metadata" poster="">
+    <video controls playsinline preload="metadata" poster="tutorial-poster.jpg">
       <source src="ControlFin-final-acelerado.mp4" type="video/mp4" />
       Seu navegador não suporta vídeo.
     </video>
@@ -224,6 +249,7 @@
     </div>
     <p class="qr-note">Ou <a href="https://evertonfagundes.github.io/controlfin-app/">toque aqui pra abrir</a>.</p>
   </section>
+  </main>
 
   <footer>
     <p>© 2026 ControlFin — Seu dinheiro. Sua decisão.</p>
